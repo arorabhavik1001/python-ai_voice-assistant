@@ -90,9 +90,9 @@ while True:
     elif 'open code' in query:
         subprocess.run(["code"])
         speak("Opening Visual Studio Code")
-    elif 'shut up' in query:
+    elif 'bye bye' in query:
         speak("Nice talking to you. See you soon.")
         break
     else:
-        speak("Sorry, that feature is not supported yet. Pls try something else. I can play music, search wikipedia, tell date and time, open websites, google or youtube and also tell you about my master, Bhavik.")
+        speak("Sorry, that feature is not supported yet. Please try something else. I can play music, search wikipedia, tell date and time, open websites, and also tell you about my master, Bhavik.")
         continue
