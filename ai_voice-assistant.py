@@ -66,7 +66,7 @@ while True:
         webbrowser.open('web.whatsapp.com')
     elif 'open website' in query:
         qq = query.split(' ')
-        speak(f"Openings {qq[2]}...")
+        speak(f"Opening {qq[2]}...")
         webbrowser.open(qq[2])
     elif 'say hare krishna' in query:
         speak(f"Hare Krishna")
@@ -79,7 +79,6 @@ while True:
         speak("Playing Music...")
         music_dir = "/home/bhavik/Music"
         musics = os.listdir(music_dir)
-        # os.startfile(os.path.join(music_dir, musics[0]))
         webbrowser.open(os.path.join(music_dir, musics[randrange(len(musics))]))
     elif 'the time' in query:
         strTime = datetime.datetime.now().strftime("%I:%M:%p")
