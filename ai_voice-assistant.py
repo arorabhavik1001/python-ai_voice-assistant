@@ -24,7 +24,7 @@ def wishUser():
         speak("Good Afternoon")
     elif hour>=16 and hour<22:
         speak("Good Evening")
-    speak("I am Luna, your virtual AI voice assistant. Please tell me how may i help you")
+    speak("I am Luna, your virtual AI voice assistant made by bhavik in python. Please tell me how may i help you")
 
 wishUser()
 
@@ -58,8 +58,6 @@ while True:
     elif 'open youtube' in query:
         speak("Opening YouTube...")
         webbrowser.open('youtube.com')
-    elif 'bhavik' in query:
-        speak("Oh! Bhavik is the best coder in the world. I have been fully coded in python by him only.")
     elif 'open google' in query:
         speak("Opening Google...")
         webbrowser.open('google.com')
@@ -70,6 +68,10 @@ while True:
         qq = query.split(' ')
         speak(f"Openings {qq[2]}...")
         webbrowser.open(qq[2])
+    elif 'say hare krishna' in query:
+        speak(f"Hare Krishna")
+    elif 'is krishna' in query:
+        speak(f"Oh! Krishna is the Absolute Truth and the primeval cause of all causes. He will soon be appearing on the 31st of august.")
     elif 'open my study material' in query:
         speak("Opening Your Study Material...")
         webbrowser.open('https://nios.ac.in/online-course-material/sr-secondary-courses.aspx')
@@ -94,5 +96,5 @@ while True:
         speak("Nice talking to you. See you soon.")
         break
     else:
-        speak("Sorry, that feature is not supported yet. Please try something else. I can play music, search wikipedia, tell date and time, open websites, and also tell you about my master, Bhavik.")
+        speak("Sorry, that feature is not supported yet. Please try something else. I can play music, search wikipedia, tell date and time, open websites.")
         continue
